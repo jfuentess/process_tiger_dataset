@@ -55,7 +55,7 @@ def process_edges_shp(directory, out_path):
         else:
             continue
 
-    print "Total number of processed files: " + str(num_files)
+    print("Total number of processed files:", num_files)
         
     total_edges = 0
     for vtx in vertices.values():

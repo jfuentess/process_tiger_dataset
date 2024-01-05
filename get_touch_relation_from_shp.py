@@ -59,7 +59,7 @@ def process_edges_shp(directory, out_path):
         else:
             continue
 
-    print "Total number of processed files: " + str(num_files)
+    print("Total number of processed files: ", num_files)
         
     total_relations = 0
     for vtx in vertices.values():
@@ -69,12 +69,10 @@ def process_edges_shp(directory, out_path):
     print("total elements:", len(vertices))
 
     # Write the touch relations
-    out_file.write(str(len(vertices)) + "\n")
-    out_file.write(str(total_edges) + "\n")
-
+    out_file.write("element1;element2\n")
     for src in vertices:
         for tgt in vertices[src]:
-            out_file.write(str(src) + " " + str(tgt) + "\n")
+            out_file.write(str(src) + ";" + str(tgt) + "\n")
 
     out_file.close()
     
