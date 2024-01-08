@@ -41,8 +41,7 @@ def read_faces_shp(directory):
         if filename.endswith(".shp"):    
             lim += 1
             if lim % 100 == 1:
-                print "processing file " + directory + filename + " (" + \
-                str(lim) + ")"
+                print("Processed files:", lim)
 
             sf = shapefile.Reader(directory + filename)
   
