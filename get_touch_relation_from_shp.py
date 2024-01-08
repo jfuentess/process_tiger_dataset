@@ -6,7 +6,7 @@
 #              the Edges ShapeFile of Tiger Dataset. Each edge in the ShapeFile
 #              has two face identifiers: one for the left face (TFIDL) and one
 #              for the right face (TFIDR). We use the face identifiers to
-#              construct the graph 
+#              construct the relations
 #
 
 import sys
